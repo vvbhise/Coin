@@ -1,0 +1,94 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+}
+
+h1 {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px #000;
+}
+
+h3 {
+    font-size: 1em;
+    margin-top: 20px;
+    text-shadow: 2px 2px #000;
+}
+
+.club-name {
+    font-family: "Ink Free", Times, serif;
+    font-size: 48px;
+    font-weight: bold;
+    color: #4CAF50; /* Example color */
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.coin-container {
+    perspective: 1000px;
+    margin-bottom: 20px;
+}
+
+.coin {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    transform-style: preserve-3d;
+    transform: rotateY(0deg);
+    transition: transform 2s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.coin img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 50%;
+}
+
+.front, .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 50%;
+}
+
+.front {
+    transform: rotateY(0deg);
+}
+
+.back {
+    transform: rotateY(180deg);
+}
+
+.result {
+    font-size: 2em;
+    margin: 0px 0;
+    visibility: hidden;
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: #007bff;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s, transform 0.2s;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
