@@ -10,26 +10,12 @@ body {
     font-family: 'Arial', sans-serif;
 }
 
-h1 {
-    font-size: 1.5em;
-    margin-bottom: 30px;
-    text-shadow: 2px 2px #000;
-}
-
-h3 {
-    font-size: 1em;
-    margin-top: 20px;
-    text-shadow: 2px 2px #000;
-}
-
 .club-name {
     font-family: "Ink Free", Times, serif;
-    font-size: 48px;
-    font-weight: bold;
+    font-size: 36px;
     color: #4CAF50; /* Example color */
-    text-transform: uppercase;
     text-align: center;
-    margin-top: 40px;
+    margin-top: 0px;
 }
 
 .coin-container {
